@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E075375285D16FA00C61475 /* StatsEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E075374285D16FA00C61475 /* StatsEntryViewController.swift */; };
+		4E075377285D1FBA00C61475 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E075376285D1FBA00C61475 /* Game.swift */; };
 		4E529003285CD50600FC15EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E529002285CD50600FC15EE /* AppDelegate.swift */; };
 		4E529005285CD50600FC15EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E529004285CD50600FC15EE /* SceneDelegate.swift */; };
 		4E529007285CD50600FC15EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E529006285CD50600FC15EE /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E075374285D16FA00C61475 /* StatsEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsEntryViewController.swift; sourceTree = "<group>"; };
+		4E075376285D1FBA00C61475 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4E528FFF285CD50600FC15EE /* Individual volleyball stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Individual volleyball stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E529002285CD50600FC15EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E529004285CD50600FC15EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +65,9 @@
 				4E529002285CD50600FC15EE /* AppDelegate.swift */,
 				4E529004285CD50600FC15EE /* SceneDelegate.swift */,
 				4E529006285CD50600FC15EE /* ViewController.swift */,
+				4E075374285D16FA00C61475 /* StatsEntryViewController.swift */,
 				4E529008285CD50600FC15EE /* Main.storyboard */,
+				4E075376285D1FBA00C61475 /* Game.swift */,
 				4E52900E285CD50800FC15EE /* Assets.xcassets */,
 				4E529010285CD50800FC15EE /* LaunchScreen.storyboard */,
 				4E529013285CD50800FC15EE /* Info.plist */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E075375285D16FA00C61475 /* StatsEntryViewController.swift in Sources */,
+				4E075377285D1FBA00C61475 /* Game.swift in Sources */,
 				4E52900D285CD50600FC15EE /* Individual_volleyball_stats.xcdatamodeld in Sources */,
 				4E529007285CD50600FC15EE /* ViewController.swift in Sources */,
 				4E529003285CD50600FC15EE /* AppDelegate.swift in Sources */,
