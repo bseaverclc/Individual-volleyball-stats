@@ -24,6 +24,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableViewOutlet.delegate = self
         tableViewOutlet.dataSource = self
+        
+        if let items = UserDefaults.standard.data(forKey: "games") {
+            print("number of items \(items.count)")
+                        let decoder = JSONDecoder()
+                        if let decoded = try? decoder.decode([Game].self, from: items) {
+                            AppData.games = decoded
+                            print("number of my games \(AppData.games.count)")
+                        }
+           
+                }
     }
     
     override func viewDidAppear(_ animated: Bool) {

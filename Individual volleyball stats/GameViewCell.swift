@@ -29,6 +29,10 @@ class GameViewCell: UITableViewCell{
         var blocks = 0
         var digs = 0
         var assists = 0
+        var zeros = 0
+        var ones = 0
+        var twos = 0
+        var threes = 0
         var win = "Win"
         
         
@@ -42,13 +46,27 @@ class GameViewCell: UITableViewCell{
             blocks += set.blockAsst + set.soloBlock
             digs += set.dig
             assists += set.assist
-           
+            zeros += set.zero
+            ones += set.one
+            twos += set.two
+            threes += set.three
         }
         
         if attacks != 0{
             var hitPercentage = (Double(kills - attackErrs))/Double(attacks)
             var hitPercentString = String(format: "%.3f", hitPercentage)
             hitPctOutlet.text = "\(hitPercentString)"
+        }
+        
+        var totalServes = ones + twos + threes + zeros
+        if totalServes != 0{
+            var total = Double(ones + 2 * twos + 3 * threes)
+            var avg = total / Double(totalServes)
+            var avgString = String(format: "%.2f", avg)
+           serveReceiveOutlet.text = "\(avgString)"
+        }
+        else{
+            serveReceiveOutlet.text = "0.00"
         }
        
         

@@ -50,6 +50,13 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
 
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(AppData.games) {
+                           UserDefaults.standard.set(encoded, forKey: "games")
+                       }
+    }
+    
 
     @IBAction func setNumAction(_ sender: UISegmentedControl) {
         set = selectedGame.sets[sender.selectedSegmentIndex]
@@ -285,6 +292,14 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
         set.three -= 1
         updateScreen()
     }
+    
+    @IBAction func saveAction(_ sender: UIButton) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(AppData.games) {
+                           UserDefaults.standard.set(encoded, forKey: "games")
+                       }
+    }
+    
     
     
 }
