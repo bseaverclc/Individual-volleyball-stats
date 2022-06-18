@@ -36,4 +36,9 @@ class ASet: Codable{
     var hitPct = 0.0
     var serveReceiveAvg = 0.0
     
+    var zero = 0
+    var one = 0
+    var two = 0
+    var three = 0
+    
 }

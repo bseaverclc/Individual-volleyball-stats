@@ -87,16 +87,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-HF-a8t">
-                                                                    <rect key="frame" x="222" y="0.0" width="70" height="41"/>
+                                                                    <rect key="frame" x="222" y="0.0" width="69.5" height="41"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blocks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-64-NO1">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-aa-McY">
-                                                                            <rect key="frame" x="0.0" y="20.5" width="70" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="20.5" width="69.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -104,16 +104,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Bz-r1F">
-                                                                    <rect key="frame" x="292" y="0.0" width="47.5" height="41"/>
+                                                                    <rect key="frame" x="291.5" y="0.0" width="48" height="41"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptr-9w-Ffk">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="20.5"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgz-GE-Uf4">
-                                                                            <rect key="frame" x="0.0" y="20.5" width="47.5" height="20.5"/>
+                                                                            <rect key="frame" x="0.0" y="20.5" width="48" height="20.5"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -138,36 +138,39 @@
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ayf-P0-YUj" firstAttribute="width" secondItem="j7O-kP-NOY" secondAttribute="width" multiplier="0.307971" id="sRj-sU-Oca"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Use-3r-JE1">
                                                             <rect key="frame" x="0.0" y="41" width="414" height="41"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZg-2i-S8D">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="39.5" height="41"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W/L?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZg-2i-S8D">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="47" height="41"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hitting%:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-5L-e4s">
-                                                                    <rect key="frame" x="39.5" y="0.0" width="94.5" height="41"/>
+                                                                    <rect key="frame" x="47" y="0.0" width="92.5" height="41"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-9M-Nsx">
-                                                                    <rect key="frame" x="134" y="0.0" width="46.5" height="41"/>
+                                                                    <rect key="frame" x="139.5" y="0.0" width="46" height="41"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serve Receive Avg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Bp-rpx">
-                                                                    <rect key="frame" x="180.5" y="0.0" width="187.5" height="41"/>
+                                                                    <rect key="frame" x="185.5" y="0.0" width="183.5" height="41"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVL-PN-JCw">
-                                                                    <rect key="frame" x="368" y="0.0" width="46" height="41"/>
+                                                                    <rect key="frame" x="369" y="0.0" width="45" height="41"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -295,7 +298,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S. Receive% .000" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-t2-GEK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S. Receive 0.00" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-t2-GEK">
                                         <rect key="frame" x="207" y="0.0" width="207" height="30"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,11 +325,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7K-uM-pHj">
                                                         <rect key="frame" x="0.0" y="0.0" width="80.5" height="98.5"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="0">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="zeroAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="OB0-Qv-xkX"/>
+                                                            <outletCollection property="gestureRecognizers" destination="zqU-B7-nLL" appends="YES" id="JzT-Md-nJr"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-UA-ulv">
                                                         <rect key="frame" x="0.0" y="75" width="80.5" height="20.5"/>
@@ -352,11 +360,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ok-s1-zaA">
                                                         <rect key="frame" x="0.0" y="0.0" width="81" height="98.5"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="1">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="oneAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="iEv-TQ-HNO"/>
+                                                            <outletCollection property="gestureRecognizers" destination="UY1-fn-DUd" appends="YES" id="Muz-1L-UfQ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-G2-Lbk">
                                                         <rect key="frame" x="0.0" y="75" width="81" height="20.5"/>
@@ -382,11 +395,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-jr-hth">
                                                         <rect key="frame" x="0.0" y="0.0" width="80.5" height="98.5"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="2">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="twoAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="AaG-nk-m5d"/>
+                                                            <outletCollection property="gestureRecognizers" destination="WRT-Tk-glp" appends="YES" id="Ej0-Hv-Ymh"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-cT-DZ0">
                                                         <rect key="frame" x="0.0" y="75" width="80.5" height="20.5"/>
@@ -412,11 +430,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dia-QG-1F0">
                                                         <rect key="frame" x="0.0" y="0.0" width="81" height="98.5"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="3">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="threeAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="oVI-wi-PnX"/>
+                                                            <outletCollection property="gestureRecognizers" destination="msH-Nd-N6p" appends="YES" id="I5D-WQ-U4z"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1T-9X-fBU">
                                                         <rect key="frame" x="0.0" y="75" width="81" height="20.5"/>
@@ -471,6 +494,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS9-P8-WLr">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Attack">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
@@ -478,6 +502,7 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="attackAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="zEq-TI-2EX"/>
+                                                            <outletCollection property="gestureRecognizers" destination="223-YV-lhx" appends="YES" id="RdW-WH-4lH"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qoj-zr-u1f">
@@ -504,11 +529,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80d-hd-Ik1">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Solo Block">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="soloBlockAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="29U-rv-xSn"/>
+                                                            <outletCollection property="gestureRecognizers" destination="7PP-9G-esU" appends="YES" id="7MU-tv-ThE"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFw-qE-ASc">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -540,6 +570,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-UA-XUI">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Kill">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
@@ -547,6 +578,7 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="killAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="Pez-gA-2GR"/>
+                                                            <outletCollection property="gestureRecognizers" destination="cE0-KO-vfm" appends="YES" id="hXN-cX-CUD"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3z-0d-6pZ">
@@ -573,11 +605,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOE-f1-6RZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Block Asst">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="blockAssistAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="ONu-ov-L6J"/>
+                                                            <outletCollection property="gestureRecognizers" destination="pca-gC-V6n" appends="YES" id="d7s-6v-SL2"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-l6-ey8">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -609,6 +646,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4m-KN-e68">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87.5"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Attack Err">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
@@ -616,6 +654,7 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="attackErrAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="GdF-Ha-7nL"/>
+                                                            <outletCollection property="gestureRecognizers" destination="A94-uk-Oxh" appends="YES" id="9NX-dA-xXl"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTd-cE-5ci">
@@ -642,11 +681,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-eg-EPO">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Dig">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="digAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="CPo-fT-Rvm"/>
+                                                            <outletCollection property="gestureRecognizers" destination="stn-bY-zRn" appends="YES" id="VCY-Y0-t2W"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGC-xb-GVS">
                                                         <rect key="frame" x="0.0" y="57.5" width="206" height="30"/>
@@ -678,11 +722,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpX-23-jSb">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Assist Att">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="AssistAttAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="saU-Qj-nXb"/>
+                                                            <outletCollection property="gestureRecognizers" destination="CBp-eA-esc" appends="YES" id="yDO-WD-As5"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygy-rn-y35">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -708,11 +757,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on3-hc-c0z">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Service Att">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="serveAttAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="PhK-po-ndm"/>
+                                                            <outletCollection property="gestureRecognizers" destination="Z43-zo-dfK" appends="YES" id="LfC-4M-hDC"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-pD-IK2">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -744,11 +798,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwD-Wk-Wbt">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Assist">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="assistAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="S1k-0C-NLG"/>
+                                                            <outletCollection property="gestureRecognizers" destination="bvf-xk-POk" appends="YES" id="R7o-7V-pKf"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4WA-uD-lgw">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -774,11 +833,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9K-eQ-i7s">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Service Err">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="serviceErrAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="Mw3-bM-BUC"/>
+                                                            <outletCollection property="gestureRecognizers" destination="zyB-Sz-jpd" appends="YES" id="dIW-NR-fS8"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ii7-iC-QFe">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -810,11 +874,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQj-kC-y0s">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Ball Hand Err">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ballHandErrAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="BSb-Ki-lzR"/>
+                                                            <outletCollection property="gestureRecognizers" destination="skO-1U-olA" appends="YES" id="cZn-al-HbC"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-2l-BmD">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -840,11 +909,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSE-Vd-qx3">
                                                         <rect key="frame" x="0.0" y="0.0" width="206" height="87"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Ace">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="aceAction:" destination="OQI-er-cPK" eventType="touchUpInside" id="jBq-PF-gy3"/>
+                                                            <outletCollection property="gestureRecognizers" destination="IhL-GL-2yr" appends="YES" id="yhn-Wg-iIe"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUl-qg-3HZ">
                                                         <rect key="frame" x="0.0" y="57" width="206" height="30"/>
@@ -908,19 +982,106 @@
                         <outlet property="AssistLabelOutlet" destination="4WA-uD-lgw" id="eTz-ih-ufq"/>
                         <outlet property="AttackErrLabelOutlet" destination="rTd-cE-5ci" id="fRT-mM-9wk"/>
                         <outlet property="BallHandErrLabelOutlet" destination="6Gs-2l-BmD" id="jLm-Jh-8yR"/>
-                        <outlet property="athleteNameTextField" destination="c6m-xX-uAQ" id="azh-aB-w2C"/>
+                        <outlet property="SReceivePctLabel" destination="YNh-t2-GEK" id="d0l-t4-Wz4"/>
+                        <outlet property="aceOutlet" destination="uUl-qg-3HZ" id="lbB-9X-BoR"/>
                         <outlet property="attackLabelOutlet" destination="Qoj-zr-u1f" id="ga3-4f-X2z"/>
                         <outlet property="blockAsstLabelOutlet" destination="3Ej-l6-ey8" id="RZg-eF-Bcq"/>
                         <outlet property="digLabelOutlet" destination="BGC-xb-GVS" id="drR-Vg-pFB"/>
-                        <outlet property="gameNameTextField" destination="yNP-kk-kf2" id="8Z8-jB-4bn"/>
+                        <outlet property="hitPctLabel" destination="KzE-HY-stz" id="7EO-ir-F2n"/>
                         <outlet property="killLabelOutlet" destination="E3z-0d-6pZ" id="mZ3-N3-7Kf"/>
+                        <outlet property="nameAthleteOutlet" destination="c6m-xX-uAQ" id="uOZ-Hy-p1C"/>
+                        <outlet property="nameGameOutlet" destination="yNP-kk-kf2" id="qge-Jo-Ir8"/>
+                        <outlet property="oneLabel" destination="vsP-G2-Lbk" id="Ili-X4-v3T"/>
                         <outlet property="serviceAttLabelOutlet" destination="qZA-pD-IK2" id="gj1-9k-rk8"/>
                         <outlet property="serviceErrLabelOutlet" destination="Ii7-iC-QFe" id="k1M-Pz-bOG"/>
                         <outlet property="setSegOutlet" destination="BfJ-ZQ-GkK" id="TJF-uV-DwX"/>
                         <outlet property="soloBlockLabelOutlet" destination="cFw-qE-ASc" id="Xce-0E-vap"/>
+                        <outlet property="threeLabel" destination="G1T-9X-fBU" id="XTC-Fp-skG"/>
+                        <outlet property="twoLabel" destination="dhr-cT-DZ0" id="sca-tA-ir6"/>
+                        <outlet property="zeroLabel" destination="pmJ-UA-ulv" id="67c-mI-5we"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6as-Yq-KNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="223-YV-lhx" userLabel="Attack Swipe">
+                    <connections>
+                        <action selector="attackSwipeAction:" destination="OQI-er-cPK" id="Ooz-Gp-KqB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="cE0-KO-vfm" userLabel="Kill Swipe">
+                    <connections>
+                        <action selector="killSwipeAction:" destination="OQI-er-cPK" id="RHi-3u-Q2y"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="A94-uk-Oxh" userLabel="AttackErr Swipe">
+                    <connections>
+                        <action selector="attackErrSwipeAction:" destination="OQI-er-cPK" id="mZB-4A-uOv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="CBp-eA-esc" userLabel="AssistAtt Swipe">
+                    <connections>
+                        <action selector="assistAttSwipeAction:" destination="OQI-er-cPK" id="2RK-wb-hFh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="bvf-xk-POk" userLabel="Assist Swipe">
+                    <connections>
+                        <action selector="assistSwipeAction:" destination="OQI-er-cPK" id="SVL-zw-HNT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="skO-1U-olA" userLabel="BallHandErr Swipe">
+                    <connections>
+                        <action selector="ballHandErrSwipeAction:" destination="OQI-er-cPK" id="cKd-jh-4an"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="7PP-9G-esU" userLabel="SoloBlock Swipe">
+                    <connections>
+                        <action selector="soloBlockSwipeAction:" destination="OQI-er-cPK" id="DkC-Mf-Wic"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="pca-gC-V6n" userLabel="BlockAsst Swipe">
+                    <connections>
+                        <action selector="blockAsstSwipeAction:" destination="OQI-er-cPK" id="mqG-tS-Mef"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="stn-bY-zRn" userLabel="Dig Swipe">
+                    <connections>
+                        <action selector="digSwipeAction:" destination="OQI-er-cPK" id="Lb4-gW-Puy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Z43-zo-dfK" userLabel="ServiceAtt Swipe">
+                    <connections>
+                        <action selector="serveAttSwipeAction:" destination="OQI-er-cPK" id="2Pm-b2-025"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="zyB-Sz-jpd" userLabel="ServiceErr Swipe">
+                    <connections>
+                        <action selector="serveErrSwipeAction:" destination="OQI-er-cPK" id="lyH-6K-IEz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="IhL-GL-2yr" userLabel="AceSwipe">
+                    <connections>
+                        <action selector="aceSwipeAction:" destination="OQI-er-cPK" id="lYj-L1-lVk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="zqU-B7-nLL" userLabel="zeroSwipe">
+                    <connections>
+                        <action selector="zeroSwipeAction:" destination="OQI-er-cPK" id="vX4-6M-Boh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="UY1-fn-DUd" userLabel="oneSwipe">
+                    <connections>
+                        <action selector="oneSwipeAction:" destination="OQI-er-cPK" id="F2V-Kq-x44"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="WRT-Tk-glp" userLabel="twoSwipe">
+                    <connections>
+                        <action selector="twoSwipe:" destination="OQI-er-cPK" id="DcJ-L3-BxT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="msH-Nd-N6p" userLabel="threeSwipe">
+                    <connections>
+                        <action selector="threeSwipeAction:" destination="OQI-er-cPK" id="885-y4-Dxp"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1750.7246376811595" y="70.982142857142847"/>
         </scene>
