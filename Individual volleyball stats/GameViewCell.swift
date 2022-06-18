@@ -71,7 +71,7 @@ class GameViewCell: UITableViewCell{
        
         
         athleteNameOutlet.text = game.athleteName
-        gameNameOutlet.text = game.gameName
+        gameNameOutlet.text = "vs \(game.gameName)"
         KillsOutlet.text = "\(kills)"
         acesOutlet.text = "\(aces)"
         blocksOutlet.text = "\(blocks)"

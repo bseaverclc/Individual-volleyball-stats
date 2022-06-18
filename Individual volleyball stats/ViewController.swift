@@ -63,6 +63,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         performSegue(withIdentifier: "toStats", sender: self)
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            let alert = UIAlertController(title: "Alert!", message: "Are you sure you want to delete this game?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { a in
+                
+                
+                AppData.games.remove(at: indexPath.row)
+                let encoder = JSONEncoder()
+                if let encoded = try? encoder.encode(AppData.games) {
+                                   UserDefaults.standard.set(encoded, forKey: "games")
+                               }
+                
+                tableView.reloadData()
+                
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! StatsEntryViewController
         nvc.selectedGame = selectedGame
