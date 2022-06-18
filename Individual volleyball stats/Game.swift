@@ -11,6 +11,7 @@ class Game: Codable{
     var gameName = ""
     var athleteName  = ""
     var sets = [ASet(), ASet(), ASet(), ASet(), ASet()]
+   
     
   
 }
@@ -31,4 +32,8 @@ class ASet: Codable{
     var serveAtt = 0
     var serveErr = 0
     var ace = 0
+    
+    var hitPct = 0.0
+    var serveReceiveAvg = 0.0
+    
 }
