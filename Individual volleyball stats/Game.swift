@@ -17,6 +17,9 @@ class Game: Codable{
 }
 
 class ASet: Codable{
+    var nameScore : Int?
+    var opponentScore : Int?
+    
     var attack = 0
     var kill = 0
     var attackErr = 0
