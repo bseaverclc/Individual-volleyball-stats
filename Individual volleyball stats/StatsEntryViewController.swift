@@ -66,7 +66,9 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
     
 
     @IBAction func setNumAction(_ sender: UISegmentedControl) {
+        saveNamesAndScores()
         set = selectedGame.sets[sender.selectedSegmentIndex]
+        
         updateScreen()
     }
     
