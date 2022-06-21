@@ -11,6 +11,13 @@ class Game: Codable{
     var gameName = ""
     var athleteName  = ""
     var sets = [ASet(), ASet(), ASet(), ASet(), ASet()]
+    var date : Date?
+    
+    init(){
+        date = Date()
+        
+       
+    }
    
     
   

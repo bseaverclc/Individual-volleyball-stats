@@ -179,22 +179,22 @@ class FullStatsViewController: UIViewController {
         for i in 0 ..< servePctsOutlet.count - 1{
             var set = selectedGame.sets[i]
             if set.serveAtt != 0{
-                var servePercentage = (Double(set.serveAtt - set.serveErr))/Double(set.serveAtt)
-                var servePercentString = String(format: "%0.2f", servePercentage)
-                servePctsOutlet[i].text = "\(servePercentString)"
+                var servePercentage = Int(round((Double(set.serveAtt - set.serveErr))/Double(set.serveAtt) * 100))
+               
+                servePctsOutlet[i].text = "\(servePercentage)%"
             }
             else{
-                servePctsOutlet[i].text = "0.00"
+                servePctsOutlet[i].text = "NA"
             }
         }
         
         if serves != 0{
-            var servePercentage = (Double(serves - serveErrs))/Double(serves)
-            var servePercentString = String(format: "%0.2f", servePercentage)
-            servePctsOutlet[5].text = "\(servePercentString)"
+            var servePercentage = Int(round((Double(serves - serveErrs))/Double(serves) * 100))
+           
+            servePctsOutlet[5].text = "\(servePercentage)%"
         }
         else{
-            servePctsOutlet[5].text = "0.00"
+            servePctsOutlet[5].text = "NA"
         }
         
 // **** S. Receive Avg ****

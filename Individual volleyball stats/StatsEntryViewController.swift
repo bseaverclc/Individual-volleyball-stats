@@ -34,6 +34,7 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
   
     @IBOutlet weak var hitPctLabel: UILabel!
     @IBOutlet weak var SReceivePctLabel: UILabel!
+    @IBOutlet weak var servePctOutlet: UILabel!
     
     
     @IBOutlet weak var zeroLabel: UILabel!
@@ -60,6 +61,7 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
         if let encoded = try? encoder.encode(AppData.games) {
                            UserDefaults.standard.set(encoded, forKey: "games")
                        }
+        saveNamesAndScores()
     }
     
 
@@ -236,10 +238,19 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
         if set.attack != 0{
             var hitPercentage = (Double(set.kill - set.attackErr))/Double(set.attack)
             var hitPercentString = String(format: "%.3f", hitPercentage)
-            hitPctLabel.text = "Hitting% \(hitPercentString)"
+            hitPctLabel.text = "Hit% \(hitPercentString)"
         }
         else{
-            hitPctLabel.text = "Hitting% .000"
+            hitPctLabel.text = "Hit% .000"
+        }
+        
+        if set.serveAtt != 0{
+            var servePercentage = Int(round((Double(set.serveAtt - set.serveErr))/Double(set.serveAtt) * 100.0))
+            
+            servePctOutlet.text = "Serve% \(servePercentage)"
+        }
+        else{
+            servePctOutlet.text = "Serve% NA"
         }
         
         attackLabelOutlet.text = "\(set.attack)"
@@ -265,17 +276,15 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
             var total = Double(set.one + 2 * set.two + 3 * set.three)
             var avg = total / Double(totalServes)
             var avgString = String(format: "%.2f", avg)
-            SReceivePctLabel.text = "S.Receive \(avgString)"
+            SReceivePctLabel.text = "Srv Rcv \(avgString)"
         }
         else{
-            SReceivePctLabel.text = "S.Receive 0.00"
+            SReceivePctLabel.text = "Srv Rcv 0.00"
         }
         
     }
-        
     
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func saveNamesAndScores(){
         selectedGame.athleteName = nameAthleteOutlet.text!
         selectedGame.gameName = nameGameOutlet.text!
         if nameScoreOutlet.text != ""{
@@ -291,6 +300,12 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
             set.opponentScore = os
         }
         }
+    }
+        
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       saveNamesAndScores()
         
         nameGameOutlet.resignFirstResponder()
         nameAthleteOutlet.resignFirstResponder()
@@ -342,6 +357,11 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func saveAction(_ sender: UIButton) {
+        saveNamesAndScores()
+        nameGameOutlet.resignFirstResponder()
+        nameAthleteOutlet.resignFirstResponder()
+        nameScoreOutlet.resignFirstResponder()
+        opponentScoreOutlet.resignFirstResponder()
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(AppData.games) {
                            UserDefaults.standard.set(encoded, forKey: "games")
@@ -351,6 +371,7 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
                        }
+        
     }
     
     
@@ -423,6 +444,7 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
             print("changing back to red color")
         }
     }
+    
     
     
 }

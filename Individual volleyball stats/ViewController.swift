@@ -34,9 +34,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         }
            
                 }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if let oldDate = Calendar.current.date(byAdding: .year, value: -7, to: Date()) {
+           // Use this date
+        
+        
+            AppData.games = AppData.games.sorted(by: { $0.date ?? oldDate > $1.date ?? oldDate })
+      
+        }
         tableViewOutlet.reloadData()
     }
     
