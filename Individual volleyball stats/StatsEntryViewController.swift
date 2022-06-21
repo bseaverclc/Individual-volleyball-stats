@@ -412,7 +412,11 @@ class StatsEntryViewController: UIViewController, UITextFieldDelegate {
        // var ogc = button.backgroundColor
         button.backgroundColor = UIColor.green
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
-            button.backgroundColor = UIColor.systemIndigo
+            if #available(iOS 13.0, *) {
+                button.backgroundColor = UIColor.systemIndigo
+            } else {
+                // Fallback on earlier versions
+            }
             print("changing back to red color")
         }
     }
