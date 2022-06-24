@@ -15,6 +15,9 @@ class Game: Codable{
     
     init(){
         date = Date()
+        if AppData.games.count > 0{
+            athleteName = AppData.games[0].athleteName
+        }
         
        
     }
