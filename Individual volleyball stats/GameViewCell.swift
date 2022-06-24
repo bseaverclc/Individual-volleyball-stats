@@ -18,6 +18,8 @@ class GameViewCell: UITableViewCell{
    
     
     @IBOutlet weak var KillsOutlet: UILabel!
+    @IBOutlet weak var attacksOutlet: UILabel!
+    
     @IBOutlet weak var acesOutlet: UILabel!
     @IBOutlet weak var blocksOutlet: UILabel!
     @IBOutlet weak var digsOutlet: UILabel!
@@ -133,6 +135,7 @@ class GameViewCell: UITableViewCell{
         athleteNameOutlet.text = game.athleteName
         gameNameOutlet.text = "vs \(game.gameName)"
         KillsOutlet.text = "\(kills)"
+        attacksOutlet.text = "\(attacks)"
         acesOutlet.text = "\(aces)"
         blocksOutlet.text = "\(blocks)"
         digsOutlet.text = "\(digs)"

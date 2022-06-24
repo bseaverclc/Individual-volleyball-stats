@@ -16,8 +16,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     var selectedGame = Game()
+    var athletes : [String] = []
     
-   
+    @IBOutlet weak var averageTableViewOutlet: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +28,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             // Fallback on earlier versions
         }
+        UITableViewHeaderFooterView.appearance().tintColor = .white
         
         
         tableViewOutlet.delegate = self
         tableViewOutlet.dataSource = self
+        averageTableViewOutlet.delegate = self
+        averageTableViewOutlet.dataSource = self
         
         if let items = UserDefaults.standard.data(forKey: "games") {
             print("number of items \(items.count)")
@@ -40,6 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         }
            
                 }
+        setAthletes()
         
     }
     
@@ -51,25 +57,65 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             AppData.games = AppData.games.sorted(by: { $0.date ?? oldDate > $1.date ?? oldDate })
       
         }
+        setAthletes()
         tableViewOutlet.reloadData()
+        averageTableViewOutlet.reloadData()
+    }
+    
+    func setAthletes(){
+        athletes = []
+        for game in AppData.games{
+            var name = game.athleteName
+            
+                if athletes.contains(name){
+                    print("athlete in array")
+                }
+                else{
+                    athletes.append(name)
+                }
+            
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView == tableViewOutlet{
+        return "Games"
+        }
+        else {
+            return "Athlete Averages"
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        AppData.games.count
+        if tableView == tableViewOutlet{
+            return AppData.games.count
+        }
+        else{
+            return athletes.count
+            
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == tableViewOutlet{
         var cell = tableViewOutlet.dequeueReusableCell(withIdentifier: "myCell") as! GameViewCell
         cell.configure(game: AppData.games[indexPath.row])
         if indexPath.row % 2 == 0{
-            cell.backgroundColor = UIColor.white
+            cell.backgroundColor = UIColor.lightGray
         
         }
         else{
-            cell.backgroundColor = UIColor.lightGray
+            cell.backgroundColor = UIColor.white
         }
         
         return cell
+        }
+        else{
+            var cell = averageTableViewOutlet.dequeueReusableCell(withIdentifier: "avgCell") as! AvgViewCellTableViewCell
+            cell.configure(name: athletes[indexPath.row])
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -95,6 +141,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                }
                 
                 tableView.reloadData()
+                self.setAthletes()
+                self.averageTableViewOutlet.reloadData()
                 
             }))
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
