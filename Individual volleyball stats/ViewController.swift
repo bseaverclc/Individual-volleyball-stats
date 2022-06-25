@@ -114,6 +114,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         else{
             var cell = averageTableViewOutlet.dequeueReusableCell(withIdentifier: "avgCell") as! AvgViewCellTableViewCell
             cell.configure(name: athletes[indexPath.row])
+            if indexPath.row % 2 == 0{
+                cell.backgroundColor = UIColor.lightGray
+            
+            }
+            else{
+                cell.backgroundColor = UIColor.white
+            }
             return cell
         }
     }
